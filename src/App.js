@@ -5,7 +5,8 @@ import SingleProperty from './SingleProperty';
 function App() {
 
   const [property, setProperty] = useState([]);
-
+  const [isSearch, setIsSearch] = useState(false);
+  const [searchData, setSearchData] = useState([]);
 
   useEffect(() => {
     fetch('data.json')
@@ -14,25 +15,33 @@ function App() {
   }, [])
 
 
-  const handleSubmit = e =>{
+  const handleSubmit = e => {
     e.preventDefault();
     const location = e.target.location.value;
     const date = e.target.date.value;
     const price = e.target.price.value;
     const type = e.target.type.value;
-    console.log(location , date , price , type);
+
+    let splitPrice = price.split('-').map(el => +el);
+    let filterBy = [location, date, type];
+    let result = property
+      .filter(
+        (el) =>
+          filterBy.includes(el.location) &&
+          filterBy.includes(el.date) &&
+          filterBy.includes(el.type)
+      )
+      .filter(
+        (data) => data.price >= splitPrice[0] && data.price <= splitPrice[1]
+      );
+    setIsSearch(true)
+    if (result === null) {
+      alert('no')
+    }else{
+      setSearchData(result)
+    }
+
   }
-
-
-
-
-  // searchTerms = (person) => {
-  //   return person.name === "john" && person.dinner === "sushi";
-  // }
-
-
-
-
 
 
 
@@ -63,8 +72,11 @@ function App() {
         <input type="submit" value='Search' className='btn btn-primary' />
       </form>
       <div className='grid grid-cols-3 gap-3'>
-        {
+        {!isSearch &&
           property.map(singleProperty => <SingleProperty singleProperty={singleProperty} key={singleProperty.id}></SingleProperty>)
+        }
+        {isSearch &&
+          searchData.map(singleProperty => <SingleProperty singleProperty={singleProperty} key={singleProperty.id}></SingleProperty>)
         }
       </div>
     </div>
