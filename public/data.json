@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "name": "Home in Merrick Way",
+        "img": "https://modern.b-cdn.net/wp-content/uploads/2017/06/exterior-05-488x326.jpg",
+        "location": "Miami",
+        "type": "House",
+        "date": "12/9/2022",
+        "price": "1200"
+    },
+    {
+        "id": "2",
+        "name": "Villa in Coral Gables",
+        "img": "https://modern.b-cdn.net/wp-content/uploads/2017/06/exterior-04-488x326.jpg",
+        "location": "Hollywood",
+        "type": "Office",
+        "date": "13/9/2022",
+        "price": "1350"
+    },
+    {
+        "id": "3",
+        "name": "Villa on Grand Avenue",
+        "img": "https://modern.b-cdn.net/wp-content/uploads/2020/06/bunglow-01-488x326.jpg",
+        "location": "Miami",
+        "type": "House",
+        "date": "14/9/2022",
+        "price": "1400"
+    },
+    {
+        "id": "4",
+        "name": "Spacious Apartment",
+        "img": "https://modern.b-cdn.net/wp-content/uploads/2021/04/apartment-08-488x326.jpg",
+        "location": "Hollywood",
+        "type": "Office",
+        "date": "15/9/2022",
+        "price": "1550"
+    },
+    {
+        "id": "5",
+        "name": "Home in Merrick Way",
+        "img": "https://modern.b-cdn.net/wp-content/uploads/2017/06/exterior-05-488x326.jpg",
+        "location": "Miami",
+        "type": "House",
+        "date": "12/9/2022",
+        "price": "1200"
+    },
+    {
+        "id": "6",
+        "name": "Villa in Coral Gables",
+        "img": "https://modern.b-cdn.net/wp-content/uploads/2017/06/exterior-04-488x326.jpg",
+        "location": "Hollywood",
+        "type": "Office",
+        "date": "20/9/2022",
+        "price": "1350"
+    },
+    {
+        "id": "7",
+        "name": "Villa on Hollywood Boulevard",
+        "img": "https://modern.b-cdn.net/wp-content/uploads/2020/06/bunglow-01-488x326.jpg",
+        "location": "Hollywood",
+        "type": "House",
+        "date": "17/9/2022",
+        "price": "1400"
+    },
+    {
+        "id": "8",
+        "name": "Luxury Apartment",
+        "img": "https://modern.b-cdn.net/wp-content/uploads/2020/06/apartment-05-488x326.jpg",
+        "location": "Miami",
+        "type": "Office",
+        "date": "16/9/2022",
+        "price": "1550"
+    }
+]
